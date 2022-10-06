@@ -8,7 +8,7 @@ interface ITextProps {
 	children: React.ReactNode;
 }
 
-export const Text: React.FC<ITextProps> = ({ varient, children }) => {
+const Text: React.FC<ITextProps> = ({ varient, children }) => {
 	switch (varient) {
 		case 'body':
 			return <p className='body-text'>{children}</p>;
@@ -24,3 +24,5 @@ export const Text: React.FC<ITextProps> = ({ varient, children }) => {
 			return null;
 	}
 };
+
+export default Text;

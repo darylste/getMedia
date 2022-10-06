@@ -1,0 +1,12 @@
+.hero {
+	display: flex;
+
+	&-img {
+		width: 100%;
+	}
+}
+
+.left,
+.right {
+	width: 50%;
+}
