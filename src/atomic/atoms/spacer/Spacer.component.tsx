@@ -2,7 +2,7 @@ import React from 'react';
 import './Spacer.styles.scss';
 const classNames = require('classnames');
 
-type Spacing = 'sm' | 'md' | 'lg';
+type Spacing = 'xs' | 'sm' | 'md' | 'lg';
 
 interface ISpacerProps {
 	children?: React.ReactNode;

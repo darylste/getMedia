@@ -2,7 +2,7 @@ import React from 'react';
 import './Nav.styles.scss';
 
 import Spacer from '../spacer/Spacer.component';
-import { Text } from '../text/Text.component';
+import Text from '../text/Text.component';
 
 const Nav: React.FC = () => {
 	return (

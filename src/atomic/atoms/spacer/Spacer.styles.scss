@@ -1,6 +1,9 @@
 @import '../../../styles/variables.scss';
 
 .top {
+	&-xs {
+		padding-top: $spacing-xs;
+	}
 	&-sm {
 		padding-top: $spacing-sm;
 	}
@@ -13,6 +16,9 @@
 }
 
 .right {
+	&-xs {
+		padding-right: $spacing-xs;
+	}
 	&-sm {
 		padding-right: $spacing-sm;
 	}
@@ -25,6 +31,9 @@
 }
 
 .bottom {
+	&-xs {
+		padding-bottom: $spacing-xs;
+	}
 	&-sm {
 		padding-bottom: $spacing-sm;
 	}
@@ -37,6 +46,9 @@
 }
 
 .left {
+	&-xs {
+		padding-left: $spacing-xs;
+	}
 	&-sm {
 		padding-left: $spacing-sm;
 	}
