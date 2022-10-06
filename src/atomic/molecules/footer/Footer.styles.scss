@@ -1,0 +1,22 @@
+@import '../../../styles/variables.scss';
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	background-color: $color-green-black;
+	padding: $spacing-sm 0;
+}
+
+.footer-list {
+	&-container {
+		& h3 {
+			color: white;
+			margin-bottom: $spacing-xs;
+		}
+
+		& li {
+			list-style: none;
+			color: white;
+		}
+	}
+}
