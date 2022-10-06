@@ -15,6 +15,20 @@ h3 {
 	font-weight: 400;
 }
 
-p {
+.body-text {
 	letter-spacing: 0.5px;
+}
+
+.nav-text {
+	font-family: $font-secondary;
+	font-size: $font-size-lg;
+	cursor: pointer;
+
+	&:hover {
+		color: $color-blue-light;
+	}
+
+	&:active {
+		filter: brightness(0.8);
+	}
 }
