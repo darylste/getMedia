@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/App.scss';
 
 import { Text } from './atomic/atoms/text/Text.component';
+import Spacer from './atomic/atoms/spacer/Spacer.component';
 
 function App() {
 	return (
