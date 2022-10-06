@@ -1,0 +1,20 @@
+@import '../../../styles/variables.scss';
+
+h1 {
+	font-size: $font-size-xl;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: $font-size-xl;
+	font-weight: 500; /* CHECK THIS */
+}
+
+h3 {
+	font-size: $font-size-lg;
+	font-weight: 400;
+}
+
+p {
+	letter-spacing: 0.5px;
+}
