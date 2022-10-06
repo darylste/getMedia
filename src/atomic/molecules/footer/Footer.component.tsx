@@ -2,7 +2,6 @@ import React from 'react';
 import './Footer.styles.scss';
 
 import Text from '../../atoms/text/Text.component';
-import Spacer from '../../atoms/spacer/Spacer.component';
 
 const Footer: React.FC = () => {
 	return (
@@ -10,33 +9,57 @@ const Footer: React.FC = () => {
 			<div className='footer-list-container'>
 				<Text varient='h3'>About</Text>
 				<ul className='footer-list'>
-					<li>Our Story</li>
-					<li>Our Team</li>
-					<li>Careers</li>
+					<li>
+						<Text varient='footer-item'>Our Story</Text>
+					</li>
+					<li>
+						<Text varient='footer-item'>Our Team</Text>
+					</li>
+					<li>
+						<Text varient='footer-item'>Careers</Text>
+					</li>
 				</ul>
 			</div>
 			<div className='footer-list-container'>
 				<Text varient='h3'>Follow Us</Text>
 				<ul className='footer-list'>
-					<li>Facebook</li>
-					<li>Instagram</li>
-					<li>Twitter</li>
+					<li>
+						<Text varient='footer-item'>Facebook</Text>
+					</li>
+					<li>
+						<Text varient='footer-item'>Instagram</Text>
+					</li>
+					<li>
+						<Text varient='footer-item'>Twitter</Text>
+					</li>
 				</ul>
 			</div>
 			<div className='footer-list-container'>
 				<Text varient='h3'>Legal</Text>
 				<ul className='footer-list'>
-					<li>Terms and conditions</li>
-					<li>Privicy Policy</li>
-					<li>Terms of Use</li>
+					<li>
+						<Text varient='footer-item'>Terms and Conditions</Text>
+					</li>
+					<li>
+						<Text varient='footer-item'>Privicy Policy</Text>
+					</li>
+					<li>
+						<Text varient='footer-item'>Terms of Use</Text>
+					</li>
 				</ul>
 			</div>
 			<div className='footer-list-container'>
 				<Text varient='h3'>Contact</Text>
 				<ul className='footer-list'>
-					<li>123 Main Street</li>
-					<li>Glasgow</li>
-					<li>G1 123</li>
+					<li>
+						<Text varient='footer-item'>123 Main Street</Text>
+					</li>
+					<li>
+						<Text varient='footer-item'>Glasgow</Text>
+					</li>
+					<li>
+						<Text varient='footer-item'>G1 123</Text>
+					</li>
 				</ul>
 			</div>
 		</footer>

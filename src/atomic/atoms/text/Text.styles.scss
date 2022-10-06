@@ -11,7 +11,7 @@ h2 {
 }
 
 h3 {
-	font-size: $font-size-lg;
+	font-size: $font-size-default;
 	font-weight: 400;
 }
 
@@ -21,11 +21,25 @@ h3 {
 
 .nav-text {
 	font-family: $font-secondary;
-	font-size: $font-size-lg;
+	font-size: $font-size-default;
 	cursor: pointer;
 
 	&:hover {
 		color: $color-blue-light;
+	}
+
+	&:active {
+		filter: brightness(0.8);
+	}
+}
+
+.footer-item {
+	font-size: $font-size-sm;
+	color: $color-white;
+	cursor: pointer;
+
+	&:hover {
+		color: $color-green-light;
 	}
 
 	&:active {

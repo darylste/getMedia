@@ -24,14 +24,15 @@ const Banner: React.FC = () => {
 							eget nunc lobortis. Sed risus ultricies tristique nulla aliquet
 							enim tortor at auctor. In pellentesque massa placerat duis
 							ultricies. Vitae tempus quam pellentesque nec nam aliquam sem. Eu
-							augue ut lectus arcu. Euismod lacinia at quis risus sed. Ipsum
-							nunc aliquet bibendum enim facilisis gravida neque. Fusce ut
-							placerat orci nulla pellentesque dignissim enim sit amet.
+							augue ut lectus arcu. Euismod lacinia at quis risus sed.
 						</Text>
+						<Spacer top='xs' />
 						<Text varient='body'>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna
-							id volutpat lacus laoreet non curabitur gravida. Nullam eget felis
+							Ipsum nunc aliquet bibendum enim facilisis gravida neque. Fusce ut
+							placerat orci nulla pellentesque dignissim enim sit amet. Lorem
+							ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Urna id
+							volutpat lacus laoreet non curabitur gravida. Nullam eget felis
 							eget nunc lobortis.
 						</Text>
 					</div>

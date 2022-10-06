@@ -8,10 +8,12 @@ footer {
 }
 
 .footer-list {
+	text-align: center;
 	&-container {
+		text-align: center;
 		& h3 {
 			color: white;
-			margin-bottom: $spacing-xs;
+			margin-bottom: $spacing-xxs;
 		}
 
 		& li {
