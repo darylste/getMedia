@@ -1,10 +1,10 @@
 import React from 'react';
 import './Text.styles.scss';
 
-type IVarient = 'body' | 'h1' | 'h2' | 'h3';
+type Varient = 'body' | 'h1' | 'h2' | 'h3';
 
 interface ITextProps {
-	varient: IVarient;
+	varient: Varient;
 	children: React.ReactNode;
 }
 
