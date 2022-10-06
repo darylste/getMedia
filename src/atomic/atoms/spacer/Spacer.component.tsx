@@ -5,7 +5,7 @@ const classNames = require('classnames');
 type Spacing = 'sm' | 'md' | 'lg';
 
 interface ISpacerProps {
-	children: React.ReactNode;
+	children?: React.ReactNode;
 	top?: Spacing;
 	right?: Spacing;
 	bottom?: Spacing;
