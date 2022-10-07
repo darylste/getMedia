@@ -27,3 +27,9 @@ h5,
 h6 {
 	font-family: $font-headings;
 }
+
+.App {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
