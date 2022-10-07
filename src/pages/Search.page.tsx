@@ -10,6 +10,7 @@ const SearchPage: React.FC = () => {
 		previewUrl: string;
 		primaryGenreName: string;
 		releaseDate: string;
+		trackId: number;
 	}
 	const [results, setResults] = useState<ICollection[]>([]);
 
@@ -26,7 +27,7 @@ const SearchPage: React.FC = () => {
 	return (
 		<section>
 			{results.map((collection: ICollection) => (
-				<div className='card'>
+				<div key={collection.trackId} className='card'>
 					<h4>{collection.artistName}</h4>
 					<h5>{collection.collectionName}</h5>
 					<p>
