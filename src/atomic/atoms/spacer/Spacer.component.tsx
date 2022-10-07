@@ -1,6 +1,6 @@
 import React from 'react';
 import './Spacer.styles.scss';
-const classNames = require('classnames');
+import classNames from 'classnames';
 
 type Spacing = 'xs' | 'sm' | 'md' | 'lg';
 
