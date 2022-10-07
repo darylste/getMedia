@@ -1,7 +1,7 @@
 import React from 'react';
 import './Text.styles.scss';
 
-type Varient = 'body' | 'h1' | 'h2' | 'h3' | 'nav' | 'footer-item';
+type Varient = 'body' | 'h1' | 'h2' | 'h3' | 'h4' | 'nav' | 'footer-item';
 
 interface ITextProps {
 	varient: Varient;
@@ -18,6 +18,8 @@ const Text: React.FC<ITextProps> = ({ varient, children }) => {
 			return <h2>{children}</h2>;
 		case 'h3':
 			return <h3>{children}</h3>;
+		case 'h4':
+			return <h4>{children}</h4>;
 		case 'nav':
 			return <p className='nav-text'>{children}</p>;
 		case 'footer-item':
