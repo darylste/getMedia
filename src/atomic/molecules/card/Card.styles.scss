@@ -12,7 +12,8 @@
 	padding: 20px;
 
 	&-img {
-		height: 100px;
+		max-height: 100px;
+		max-width: 100px;
 		margin: $spacing-xxs 0;
 	}
 
