@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Submitted from '../../atoms/submitted/Submitted.component';
 import './ContactForm.styles.scss';
 
-import Spacer from '../../atoms/spacer/Spacer.component';
-
 const ContactForm: React.FC = () => {
+	const [isSubmitted, setIsSubmitted] = useState(false);
+
+	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		setIsSubmitted(true);
+	};
+
+	if (isSubmitted) {
+		return <Submitted />;
+	}
 	return (
-		<form className='form'>
+		<form className='form' onSubmit={handleSubmit}>
 			<div className='form-group'>
 				<label className='label'>Full Name</label>
 				<input required className='input' type='text' />
@@ -22,7 +31,9 @@ const ContactForm: React.FC = () => {
 				<label className='label'>Comment</label>
 				<textarea required className='input'></textarea>
 			</div>
-			<button className='form-btn'>Submit</button>
+			<button type='submit' className='form-btn'>
+				Submit
+			</button>
 		</form>
 	);
 };

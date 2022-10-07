@@ -1,4 +1,4 @@
-.not-found-container {
+.submitted-container {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -6,6 +6,7 @@
 	align-items: center;
 }
 
-.not-found-img {
-	width: 25rem;
+.thanks-img {
+	width: 15rem;
+	padding-bottom: 1.5rem;
 }
