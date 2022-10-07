@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { ICollection } from '../types';
 import axios from 'axios';
 
+import Card from '../atomic/molecules/card/Card.component';
+import CardSection from '../atomic/organisms/cardSection/CardSection.component';
+import Text from '../atomic/atoms/text/Text.component';
+import Spacer from '../atomic/atoms/spacer/Spacer.component';
+
 const SearchPage: React.FC = () => {
-	interface ICollection {
-		artistName: string;
-		artworkUrl100: string;
-		collectionName: string;
-		previewUrl: string;
-		primaryGenreName: string;
-		releaseDate: string;
-		trackId: number;
-	}
 	const [results, setResults] = useState<ICollection[]>([]);
 
 	const location = useLocation();
@@ -23,19 +20,19 @@ const SearchPage: React.FC = () => {
 			.then((res) => setResults(res.data.results))
 			.catch((err) => console.log(err));
 	}, [term]);
-	console.log(results);
+
 	return (
-		<section>
-			{results.map((collection: ICollection) => (
-				<div key={collection.trackId} className='card'>
-					<h4>{collection.artistName}</h4>
-					<h5>{collection.collectionName}</h5>
-					<p>
-						Year: {collection.releaseDate} Genre: {collection.primaryGenreName}
-					</p>
-				</div>
-			))}
-		</section>
+		<>
+			<Spacer top='sm' right='md' bottom='sm' left='md'>
+				<Text varient='h2'>Showing {results.length} results...</Text>
+				<Spacer top='xs' />
+				<CardSection>
+					{results.map((collection: ICollection) => (
+						<Card key={collection.trackId} collection={collection} />
+					))}
+				</CardSection>
+			</Spacer>
+		</>
 	);
 };
 
