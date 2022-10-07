@@ -5,7 +5,7 @@ import Footer from '../atomic/molecules/footer/Footer.component';
 import Header from '../atomic/molecules/header/Header.component';
 import Hero from '../atomic/molecules/hero/Hero.component';
 
-const Home: React.FC = () => {
+const HomePage: React.FC = () => {
 	return (
 		<>
 			<Hero />
@@ -14,4 +14,4 @@ const Home: React.FC = () => {
 	);
 };
 
-export default Home;
+export default HomePage;

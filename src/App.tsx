@@ -2,20 +2,20 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './styles/App.scss';
 
-import Contact from './pages/Contact.page';
 import Footer from './atomic/molecules/footer/Footer.component';
 import Header from './atomic/molecules/header/Header.component';
-import Home from './pages/Home.page';
-import Shop from './pages/Shop.page';
+import SearchPage from './pages/Search.page';
+import HomePage from './pages/Home.page';
+import ShopPage from './pages/Shop.page';
 
 function App() {
 	return (
 		<div className='App'>
 			<Header />
 			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='/contact' element={<Contact />} />
-				<Route path='/shop' element={<Shop />} />
+				<Route path='/' element={<HomePage />} />
+				<Route path='/search' element={<SearchPage />} />
+				<Route path='/shop' element={<ShopPage />} />
 			</Routes>
 			<Footer />
 		</div>
