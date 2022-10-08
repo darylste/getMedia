@@ -1,0 +1,13 @@
+@import '../../../styles/variables.scss';
+
+.voucher-section {
+	flex: 1;
+	margin: $spacing-xs $spacing-md;
+}
+
+.vouchers-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 5rem;
+	row-gap: 5rem;
+}

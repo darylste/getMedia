@@ -1,7 +1,6 @@
 @import '../../../styles/variables.scss';
 
 .form {
-	flex: 1;
 	display: flex;
 	flex-direction: column;
 	margin: $spacing-xs $spacing-md;
@@ -29,9 +28,6 @@
 			filter: brightness(0.8);
 		}
 	}
-}
-
-.label {
 }
 
 .input {
