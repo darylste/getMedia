@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Voucher.styles.scss';
 
 import Text from '../../atoms/text/Text.component';

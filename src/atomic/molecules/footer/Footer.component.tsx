@@ -7,7 +7,9 @@ const Footer: React.FC = () => {
 	return (
 		<footer>
 			<div className='footer-list-container'>
-				<Text varient='h4'>About</Text>
+				<Text varient='h4' color='white'>
+					About
+				</Text>
 				<ul className='footer-list'>
 					<li>
 						<Text varient='footer-item'>Our Story</Text>
@@ -21,7 +23,9 @@ const Footer: React.FC = () => {
 				</ul>
 			</div>
 			<div className='footer-list-container'>
-				<Text varient='h4'>Follow Us</Text>
+				<Text varient='h4' color='white'>
+					Follow Us
+				</Text>
 				<ul className='footer-list'>
 					<li>
 						<Text varient='footer-item'>Facebook</Text>
@@ -35,7 +39,9 @@ const Footer: React.FC = () => {
 				</ul>
 			</div>
 			<div className='footer-list-container'>
-				<Text varient='h4'>Legal</Text>
+				<Text varient='h4' color='white'>
+					Legal
+				</Text>
 				<ul className='footer-list'>
 					<li>
 						<Text varient='footer-item'>Terms and Conditions</Text>
@@ -49,7 +55,9 @@ const Footer: React.FC = () => {
 				</ul>
 			</div>
 			<div className='footer-list-container'>
-				<Text varient='h4'>Contact</Text>
+				<Text varient='h4' color='white'>
+					Contact
+				</Text>
 				<ul className='footer-list'>
 					<li>
 						<Text varient='footer-item'>123 Main Street</Text>

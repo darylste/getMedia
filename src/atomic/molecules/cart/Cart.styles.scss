@@ -1,0 +1,94 @@
+@import '../../../styles/variables.scss';
+
+.cart {
+	position: fixed;
+	top: 10rem;
+	right: 10rem;
+
+	padding: 2rem;
+	width: 28rem;
+	height: 35rem;
+	background-color: rgb(241, 241, 241);
+
+	border: 1px solid $color-green-black;
+
+	&-field {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-quantity {
+		width: 3.5rem;
+		text-align: center;
+		padding: 0 0rem 0 0.5rem;
+	}
+
+	&-clear {
+		position: absolute;
+		bottom: 6rem;
+		left: 2rem;
+		font-size: 1.4rem;
+		color: $color-blue-light;
+		text-decoration: underline;
+		cursor: pointer;
+
+		&:hover {
+			filter: brightness(0.8);
+		}
+
+		&:active {
+			filter: brightness(0.6);
+		}
+	}
+
+	&-total {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		bottom: 2rem;
+		left: 2rem;
+
+		&-text {
+			font-size: 2rem;
+		}
+
+		&-value {
+			font-size: 2.6rem;
+			margin-left: 1rem;
+		}
+	}
+
+	&-btn {
+		position: absolute;
+		bottom: 2rem;
+		right: 2rem;
+		border: none;
+		border-radius: 20px;
+		background-color: $color-green-light;
+		padding: 1rem 2rem;
+
+		&:hover {
+			filter: brightness(0.9);
+		}
+
+		&:active {
+			filter: brightness(0.8);
+		}
+	}
+}
+
+.exit-icon {
+	position: absolute;
+	top: 2.25rem;
+	right: 2rem;
+
+	&:hover {
+		filter: invert(62%) sepia(35%) saturate(260%) hue-rotate(158deg)
+			brightness(87%) contrast(94%);
+	}
+
+	&:active {
+		filter: brightness(0.9);
+	}
+}
