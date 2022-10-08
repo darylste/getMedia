@@ -1,9 +1,9 @@
 import React from 'react';
 
-import ContactForm from '../atomic/molecules/contactForm/ContactForm.component';
+import FormSection from '../atomic/organisms/formSection/FormSection.component';
 
 const ContactPage: React.FC = () => {
-	return <ContactForm />;
+	return <FormSection />;
 };
 
 export default ContactPage;

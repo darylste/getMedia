@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Submitted from '../../atoms/submitted/Submitted.component';
+import Text from '../../atoms/text/Text.component';
 import './ContactForm.styles.scss';
 
 const ContactForm: React.FC = () => {
