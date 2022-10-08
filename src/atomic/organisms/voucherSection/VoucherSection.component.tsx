@@ -1,6 +1,7 @@
 import React from 'react';
 import './VoucherSection.styles.scss';
 
+import Cart from '../../molecules/cart/Cart.component';
 import Spacer from '../../atoms/spacer/Spacer.component';
 import Text from '../../atoms/text/Text.component';
 import Voucher from '../../molecules/voucher/Voucher.component';
@@ -17,6 +18,7 @@ const VoucherSection: React.FC = () => {
 				<Voucher amount={20} />
 				<Voucher amount={25} />
 			</div>
+			<Cart />
 		</div>
 	);
 };
