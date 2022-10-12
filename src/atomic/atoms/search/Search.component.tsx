@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Search.styles.scss';
 
 const Search: React.FC = () => {
-	const [term, setTerm] = useState('');
+	const [term, setTerm] = useState<string>('');
 	const navigate = useNavigate();
 
 	// when form submits, stop form from reloading, use navigate from RRD to redirect to search page with search term as query parameter

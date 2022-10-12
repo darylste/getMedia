@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import Submitted from '../../atoms/submitted/Submitted.component';
-import Text from '../../atoms/text/Text.component';
 import './ContactForm.styles.scss';
 
 const ContactForm: React.FC = () => {
-	const [isSubmitted, setIsSubmitted] = useState(false);
+	const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
 
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
