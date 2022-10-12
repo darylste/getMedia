@@ -10,12 +10,14 @@ interface ICartProps {
 	addToCart: (amount: number) => void;
 	removeOne: (amount: number) => void;
 	clearCart: () => void;
+	hideCart: () => void;
 }
 const Cart: React.FC<ICartProps> = ({
 	items = [],
 	addToCart,
 	removeOne,
 	clearCart,
+	hideCart,
 }) => {
 	let cartValue = 0;
 
@@ -29,7 +31,12 @@ const Cart: React.FC<ICartProps> = ({
 	return (
 		<div className='cart'>
 			<Text varient='h3'>Your basket</Text>
-			<img src='./assets/exit.svg' alt='exit icon' className='exit-icon' />
+			<img
+				onClick={() => hideCart()}
+				src='./assets/exit.svg'
+				alt='exit icon'
+				className='exit-icon'
+			/>
 			{items.map((item) => (
 				<React.Fragment key={item.name}>
 					<Spacer top='xs' />
