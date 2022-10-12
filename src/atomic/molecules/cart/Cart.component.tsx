@@ -19,7 +19,10 @@ const Cart: React.FC<ICartProps> = ({
 }) => {
 	let cartValue = 0;
 
-	items.map((item) => {
+	// prevent cart items from being resorted when quantity ajusted
+	const sortedItems = items.sort((a, b) => (a.price > b.price ? 1 : -1));
+
+	sortedItems.map((item) => {
 		cartValue += item.price * item.quantity;
 	});
 
