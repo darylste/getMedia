@@ -6,10 +6,10 @@ import Cart from '../../molecules/cart/Cart.component';
 import Spacer from '../../atoms/spacer/Spacer.component';
 import Text from '../../atoms/text/Text.component';
 import Voucher from '../../molecules/voucher/Voucher.component';
-import { Value } from 'sass';
 
 const VoucherSection: React.FC = () => {
 	const [cart, setCart] = useState<ICartItem[]>([]);
+	const [showCart, setShowCart] = useState(false);
 
 	const addToCart = (amount: number) => {
 		const name = `£${amount} iTunes Voucher`;
@@ -23,6 +23,7 @@ const VoucherSection: React.FC = () => {
 			const newItems = [...cart, newItem];
 			setCart([...newItems]);
 		}
+		setShowCart(true);
 	};
 
 	const removeOneFromCart = (amount: number) => {
@@ -47,6 +48,35 @@ const VoucherSection: React.FC = () => {
 		setCart([]);
 	};
 
+	const hideCart = () => {
+		setShowCart(false);
+	};
+
+	if (showCart) {
+		return (
+			<>
+				<div className='voucher-section'>
+					<Text varient='h1'>Shop iTunes Vouchers</Text>
+					<Spacer top='xs' />
+					<div className='vouchers-container'>
+						<Voucher addToCart={(amount) => addToCart(amount)} amount={5} />
+						<Voucher addToCart={(amount) => addToCart(amount)} amount={10} />
+						<Voucher addToCart={(amount) => addToCart(amount)} amount={15} />
+						<Voucher addToCart={(amount) => addToCart(amount)} amount={20} />
+						<Voucher addToCart={(amount) => addToCart(amount)} amount={25} />
+					</div>
+				</div>
+				<Cart
+					addToCart={(amount) => addToCart(amount)}
+					removeOne={(amount) => removeOneFromCart(amount)}
+					clearCart={() => clearCart()}
+					hideCart={() => hideCart()}
+					items={cart}
+				/>
+			</>
+		);
+	}
+
 	return (
 		<>
 			<div className='voucher-section'>
@@ -60,12 +90,6 @@ const VoucherSection: React.FC = () => {
 					<Voucher addToCart={(amount) => addToCart(amount)} amount={25} />
 				</div>
 			</div>
-			<Cart
-				addToCart={(amount) => addToCart(amount)}
-				removeOne={(amount) => removeOneFromCart(amount)}
-				clearCart={() => clearCart()}
-				items={cart}
-			/>
 		</>
 	);
 };
