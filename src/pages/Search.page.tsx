@@ -21,7 +21,7 @@ const SearchPage: React.FC = () => {
 	useEffect(() => {
 		setIsLoading(true);
 		axios
-			.get(`https://itunes.apple.com/search?term=${term}&country=gb`)
+			.get(`https://itunes.apple.com/search?term=${term}&country=gb&limit=16`)
 			.then((res) => setResults(res.data.results))
 			.catch(() => setHasError(true))
 			.finally(() => setIsLoading(false));
