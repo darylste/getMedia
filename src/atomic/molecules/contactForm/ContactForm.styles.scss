@@ -3,15 +3,17 @@
 .form {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	margin: $spacing-xs $spacing-md;
 
 	&-group {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 100%;
+		width: 60%;
+		max-width: 750px;
 		height: 100%;
-		padding: 1rem;
+		padding: 1rem 0;
 	}
 
 	&-btn {
@@ -19,6 +21,9 @@
 		border: none;
 		padding: 0.75rem 0;
 		border-radius: 10px;
+		border: 1px solid $color-green-light;
+		width: 70%;
+		max-width: 525px;
 
 		&:hover {
 			filter: brightness(0.9);
@@ -30,10 +35,52 @@
 	}
 }
 
+.btn-container {
+	display: flex;
+	justify-content: flex-end;
+	width: 60%;
+}
+
 .input {
 	width: 70%;
 	border: 1px solid $color-green-black;
 	border-radius: 10px;
 	padding: 2.5px 0 2.5px 20px;
 	margin: 2.5px;
+}
+
+// media queries
+
+@media only screen and (max-width: 1200px) {
+	.form-group {
+		width: 80%;
+	}
+	.btn-container {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.form-group {
+		width: 100%;
+	}
+	.btn-container {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.form-group {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		& > * {
+			width: 100%;
+		}
+	}
+
+	.form-btn {
+		width: 100%;
+	}
 }
