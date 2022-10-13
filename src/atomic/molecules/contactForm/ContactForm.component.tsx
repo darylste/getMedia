@@ -31,9 +31,11 @@ const ContactForm: React.FC = () => {
 				<label className='label'>Comment</label>
 				<textarea required className='input'></textarea>
 			</div>
-			<button type='submit' className='form-btn'>
-				Submit
-			</button>
+			<div className='btn-container form-group'>
+				<button type='submit' className='form-btn'>
+					Submit
+				</button>
+			</div>
 		</form>
 	);
 };
