@@ -1,8 +1,8 @@
 import React from 'react';
 import './NotFound.styles.scss';
 
-import Text from '../text/Text.component';
-import Spacer from '../spacer/Spacer.component';
+import Text from '../../atoms/text/Text.component';
+import Spacer from '../../atoms/spacer/Spacer.component';
 
 const NotFound: React.FC = () => {
 	return (

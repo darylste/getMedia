@@ -8,7 +8,7 @@ import CardSection from '../atomic/organisms/cardSection/CardSection.component';
 import Text from '../atomic/atoms/text/Text.component';
 import Spacer from '../atomic/atoms/spacer/Spacer.component';
 import Loading from '../atomic/atoms/loading/Loading.component';
-import NotFound from '../atomic/atoms/notFound/NotFound.component';
+import NotFound from '../atomic/molecules/notFound/NotFound.component';
 
 const SearchPage: React.FC = () => {
 	const [results, setResults] = useState<ICollection[]>([]);

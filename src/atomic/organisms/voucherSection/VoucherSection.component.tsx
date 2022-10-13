@@ -9,7 +9,7 @@ import Voucher from '../../molecules/voucher/Voucher.component';
 
 const VoucherSection: React.FC = () => {
 	const [cart, setCart] = useState<ICartItem[]>([]);
-	const [showCart, setShowCart] = useState(false);
+	const [showCart, setShowCart] = useState<boolean>(false);
 
 	const addToCart = (amount: number) => {
 		const name = `£${amount} iTunes Voucher`;
@@ -44,12 +44,13 @@ const VoucherSection: React.FC = () => {
 		}
 	};
 
-	const clearCart = () => {
-		setCart([]);
-	};
-
 	const hideCart = () => {
 		setShowCart(false);
+	};
+
+	const clearCart = () => {
+		setCart([]);
+		hideCart();
 	};
 
 	if (showCart) {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Submitted from '../../atoms/submitted/Submitted.component';
+import Submitted from '../submitted/Submitted.component';
 import './ContactForm.styles.scss';
 
 const ContactForm: React.FC = () => {
