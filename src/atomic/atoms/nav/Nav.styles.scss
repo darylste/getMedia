@@ -59,3 +59,9 @@ a {
 		display: unset;
 	}
 }
+
+@media only screen and (min-width: 800px) {
+	.hamburger-icon {
+		display: none;
+	}
+}
