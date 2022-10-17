@@ -16,20 +16,28 @@ const ContactForm: React.FC = () => {
 	return (
 		<form className='form' onSubmit={handleSubmit}>
 			<div className='form-group'>
-				<label className='label'>Full Name</label>
-				<input required className='input' type='text' />
+				<label className='label' htmlFor='name'>
+					Full Name
+				</label>
+				<input name='name' required className='input' type='text' />
 			</div>
 			<div className='form-group'>
-				<label className='label'>Email Address</label>
-				<input required className='input' type='email' />
+				<label htmlFor='email address' className='label'>
+					Email Address
+				</label>
+				<input name='email address' required className='input' type='email' />
 			</div>
 			<div className='form-group'>
-				<label className='label'>Reason for contact</label>
-				<input required className='input' type='text' />
+				<label className='label' htmlFor='reason'>
+					Reason for contact
+				</label>
+				<input name='reason' required className='input' type='text' />
 			</div>
 			<div className='form-group'>
-				<label className='label'>Comment</label>
-				<textarea required className='input'></textarea>
+				<label htmlFor='comment' className='label'>
+					Comment
+				</label>
+				<textarea name='comment' required className='input'></textarea>
 			</div>
 			<div className='btn-container form-group'>
 				<button type='submit' className='form-btn'>
