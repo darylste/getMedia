@@ -1,10 +1,61 @@
+@import '../../../styles/variables.scss';
+
 .nav {
 	&-list {
 		list-style: none;
 		display: flex;
 	}
+	&-exit-icon {
+		position: absolute;
+		top: $spacing-md;
+		right: $spacing-md;
+		width: 3rem;
+
+		&:hover {
+			filter: invert(62%) sepia(35%) saturate(260%) hue-rotate(158deg)
+				brightness(87%) contrast(94%);
+		}
+
+		&:active {
+			filter: brightness(0.9);
+		}
+	}
 }
 
 a {
 	text-decoration: none;
+}
+
+.nav-mobile {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: $color-green-light;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.hamburger-icon {
+	&:hover {
+		filter: invert(62%) sepia(35%) saturate(260%) hue-rotate(158deg)
+			brightness(87%) contrast(94%);
+	}
+
+	&:active {
+		filter: brightness(0.9);
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	nav {
+		display: none;
+	}
+
+	.mobile-nav {
+		display: unset;
+	}
 }

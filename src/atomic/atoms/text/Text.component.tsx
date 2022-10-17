@@ -1,7 +1,15 @@
 import React from 'react';
 import './Text.styles.scss';
 
-type Varient = 'body' | 'h1' | 'h2' | 'h3' | 'h4' | 'nav' | 'footer-item';
+type Varient =
+	| 'body'
+	| 'h1'
+	| 'h2'
+	| 'h3'
+	| 'h4'
+	| 'nav'
+	| 'mobile-nav'
+	| 'footer-item';
 type Color = 'black' | 'white';
 
 interface ITextProps {
@@ -24,6 +32,8 @@ const Text: React.FC<ITextProps> = ({ varient, color = 'black', children }) => {
 			return <h4 className={`color-${color}`}>{children}</h4>;
 		case 'nav':
 			return <p className={`color-${color} nav-text`}>{children}</p>;
+		case 'mobile-nav':
+			return <h2 className={`color-${color} mobile-nav-text`}>{children}</h2>;
 		case 'footer-item':
 			return <p className={`color-${color} footer-item`}>{children}</p>;
 		default:
