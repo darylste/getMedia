@@ -7,8 +7,39 @@
 	background-color: $color-blue-light;
 	width: 100%;
 	padding: $spacing-md;
+
+	&-img {
+		width: 70%;
+		margin: 0 auto;
+		padding-top: $spacing-sm;
+	}
 }
 
 .banner-content {
 	display: flex;
+}
+
+// media queries
+
+@media only screen and (max-width: 1000px) {
+	.banner {
+		&-content {
+			flex-direction: column;
+		}
+
+		&-img {
+			padding-bottom: $spacing-sm;
+		}
+	}
+
+	.left,
+	.right {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 525px) {
+	.banner-img {
+		width: 100%;
+	}
 }
