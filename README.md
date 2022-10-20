@@ -2,6 +2,8 @@
 
 This website was created as a college project for the Designing and Developing an interactive Product class. The website allows you to search for music, albums or artists via the [iTunes API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html) and has a dummy cart feature which allows you to add/remove vouchers from a shopping cart created using TypeScript.
 
+[View the hosted version](https://getmedia.vercel.app/)
+
 ## Folder Structure
 
 ### Atomic
