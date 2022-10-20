@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
 						<Search />
 					</div>
 					<div className='right'>
-						<img className='hero-img' src='/music.svg' alt='' />
+						<img className='hero-img' src='/assets/music.svg' alt='hero icon' />
 					</div>
 				</section>
 			</Spacer>
