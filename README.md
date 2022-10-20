@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# GetMedia 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This website was created as a college project for the Designing and Developing an interactive Product class. The website allows you to search for music, albums or artists via the [iTunes API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html) and has a dummy cart feature which allows you to add/remove vouchers from a shopping cart created using TypeScript.
 
-## Available Scripts
+## Folder Structure
 
-In the project directory, you can run:
+### Atomic
 
-### `npm start`
+I used the atomic design pattern to ordandize the folder structure for this application, to help ensure ease of navigation throughout the project. There is a great [article about atomic design by Janelle Wong here](https://medium.com/@janelle.wg/atomic-design-pattern-how-to-structure-your-react-application-2bb4d9ca5f97).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### React
 
-### `npm test`
+This project was created using the [React](https://reactjs.org/) library. To run in development mode, run ```npm start``` in the terminal. This will run the application on [http://localhost:3000](http://localhost:3000/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Typescript
 
-### `npm run build`
+I created this application in [TypeScript](https://www.typescriptlang.org/). This allowed me to gain experience working with a typed language and made debugging the application easier.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### SASS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To style this application I used the CSS Preprocessor [SASS](https://sass-lang.com/documentation/). SASS allows for quicker and more consistant development as you can create CSS variables, nest CSS rules and more.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Packages
 
-### `npm run eject`
+### Axios
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+When making HTTP requests to the [iTunes API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html), I used the [Axios package](https://www.npmjs.com/package/axios). Axios works similarly to the built in [JavaScript Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), although can be easier to use and offers some built-in security features. For a comparison of Axios vs Fetch see [this article by GeeksForGeeks](https://www.geeksforgeeks.org/difference-between-fetch-and-axios-js-for-making-http-requests/#:~:text=Axios%20performs%20automatic%20transforms%20of,cancelling%20request%20and%20request%20timeout.).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ClassNames
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+I used the [ClassNames](https://www.npmjs.com/package/classnames) package to dynamicly generate class names for components based on props.

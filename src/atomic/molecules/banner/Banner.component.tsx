@@ -12,7 +12,11 @@ const Banner: React.FC = () => {
 				<Spacer top='md'></Spacer>
 				<div className='banner-content'>
 					<div className='left'>
-						<img className='banner-img' src='./team.svg' alt='team icon' />
+						<img
+							className='banner-img'
+							src='./assets/team.svg'
+							alt='team icon'
+						/>
 					</div>
 					<div className='right'>
 						<Text varient='body'>
